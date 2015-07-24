@@ -200,7 +200,7 @@ CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_DIRNAME
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = "/static/"
+STATIC_URL = "https//lucid-sanjivj.c9.io/static/"
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -240,7 +240,7 @@ INSTALLED_APPS = (
     "django.contrib.sites",
     "django.contrib.sitemaps",
     "django.contrib.staticfiles",
-    "theme5",
+    "theme10",
     "mezzanine.boot",
     "mezzanine.conf",
     "mezzanine.core",
