@@ -19,50 +19,7 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
 {% compress css %}
-<<<<<<< HEAD
-<link href="{% static "css/prettyPhoto.css" %}" rel="stylesheet" type="text.css" />
-<link rel="stylesheet" id="camera.css" href="{% static "css/camera.css" %}" type="text.css" media="all">
-<link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
-<link href="{% static "css/theme.css" %}" rel="stylesheet">
-<link rel="stylesheet" type="text.css" href="{% static "css/skins/tango/skin.css" %}" />
-<link href="{% static "css/bootstrap-responsive.css" %}" rel="stylesheet">
-{% block extra_css %}{% endblock %}
-{% endcompress %}
 
-<!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-{% compress js %}
-<script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
-<!--<script type="text/javascript" src="{% static "js/bootstrap.js" %}" %}"></script>-->
-<!--<script type="text/javascript" src="{% static "js/bootstrap-extras.js" %}" %}"></script>-->
-<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" %}" %}" %}" %}" %}" %}" %}"></script>-->
-<script type="text/javascript" src="{% static "js/jquery.easing.1.3.js" %}"></script>
-<script type="text/javascript" src="{% static "js/jquery.mobile.customized.min.js" %}"></script>
-<script type="text/javascript" src="{% static "js/camera.js" %}"></script>
-<script type="text/javascript" src="{% static "js/bootstrap.js" %}"></script>
-<script type="text/javascript" src="{% static "js/superfish.js" %}"></script>
-<script type="text/javascript" src="{% static "js/jquery.prettyPhoto.js" %}"></script>
-<script type="text/javascript" src="{% static "js/jquery.jcarousel.js" %}"></script>
-<script type="text/javascript" src="{% static "js/jquery.tweet.js" %}"></script>
-<script type="text/javascript" src="{% static "js/myscript.js" %}"></script>
-<script type="text/javascript">
-        $(document).ready(function(){
-                //Slider
-                $('#camera_wrap_1').camera();
-
-                //Featured works & latest posts
-                $('#mycarousel, #mycarousel2, #newscarousel').jcarousel();
-        });
-</script>
-{% block extra_js %}{% endblock %}
-{% endcompress %}
-
-<!--[if lt IE 9]>
-    <script src="{% static "js/html5shiv.js" %}" %}"></script>
-    <script src="{% static "js/respond.min.js" %}" %}"></script>
-=======
     <link href={% static "css/prettyPhoto.css" %} rel="stylesheet" type="text/css" />
     <link rel="stylesheet" id="camera.css" href={% static "css/camera.css"
     type="text/css" media="all" %}>
@@ -109,42 +66,6 @@
 {% block extra_head %}{% endblock %}
 </head>
 
-<<<<<<< HEAD
-<body id="{% block body_id %}body{% endblock %}">
-	<!--header-->
-    <div class="header">
-    	<div class="wrap">
-        	<div class="navbar navbar_ clearfix">
-            	<div class="container">
-                    <div class="row">
-                        <div class="span4">
-                        	<div class="logo"><a href="index.html"><img src="img/logo.png" alt="" /></a></div>                        
-                        </div>
-                        <div class="span8">
-                        	<div class="follow_us">
-                                <ul>
-                                    <li><a href="#" class="facebook">Facebook</a></li>
-                                    <li><a href="#" class="vimeo">Vimeo</a></li>
-                                    <li><a href="#" class="tumbrl">Tumbrl</a></li>
-                                    <li><a href="#" class="twitter">Twitter</a></li>
-                                    <li><a href="#" class="delicious">Delicious</a></li>
-                                </ul>
-                            </div>
-                            <div class="clear"></div>
-                            <nav id="main_menu">
-                                <div class="menu_wrap">
-                                    <ul class="nav sf-menu">
-                                      <li class="current"><a href="index.html">Home</a></li>
-                                      <li><a href="about.html">About</a></li>
-                                      <li class="sub-menu"><a href="javascript:{}">Features</a>
-                                          <ul>
-                                              <li><a href="scaffolding.html"><span>-</span>Scaffolding</a></li>
-                                              <li><a href="typography.html"><span>-</span>Typography</a></li>
-                                              <li><a href="shortcodes.html"><span>-</span>Shortcodes</a></li>
-                                              <li><a href="tables.html"><span>-</span>Tables</a></li>                                          
-                                          </ul>                                          
-                                      </li>
-=======
 
 <body>
     <div class="header">
@@ -181,20 +102,11 @@
                                               <li><a href="shortcodes.html"><span>-</span>Shortcodes</a></li>
                                               <li><a href="tables.html"><span>-</span>Tables</a></li>
                                           </ul>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                       <li class="sub-menu"><a href="javascript:{}">Portfolio</a>
                                            <ul>
                                               <li><a href="portfolio_2columns.html"><span>-</span>2 Columns</a></li>
                                               <li><a href="portfolio_3columns.html"><span>-</span>3 Columns</a></li>
-<<<<<<< HEAD
-                                              <li><a href="portfolio_4columns.html"><span>-</span>4 Columns</a></li>                                      
-                                          </ul>
-                                      </li>                                  
-                                      <li class="sub-menu"><a href="javascript:{}">Blog</a>
-                                           <ul>
-                                              <li><a href="blog.html"><span>-</span>Blog with right sidebar</a></li>
-                                              <li><a href="blog_post.html"><span>-</span>Blog post</a></li>                                      
-=======
+
                                               <li><a href="portfolio_4columns.html"><span>-</span>4 Columns</a></li>
                                           </ul>
                                       </li>
@@ -202,23 +114,11 @@
                                            <ul>
                                               <li><a href="blog.html"><span>-</span>Blog with right sidebar</a></li>
                                               <li><a href="blog_post.html"><span>-</span>Blog post</a></li>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                           </ul>
                                       </li>
                                       <li><a href="contacts.html">Contacts</a></li>
                                     </ul>
                                 </div>
-<<<<<<< HEAD
-                             </nav>                            
-                        </div>
-                    </div>                
-                </div>
-             </div>
-        </div>    
-    </div>
-    <!--//header-->    
-     
-=======
                              </nav>
                         </div>
                     </div>
@@ -227,22 +127,11 @@
         </div>
     </header>
 
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
     <!--page_container-->
     <div class="page_container">
         <!--slider-->
         <div id="main_slider">
             <div class="camera_wrap" id="camera_wrap_1">
-<<<<<<< HEAD
-                <div data-src="img/slider/1.jpg"></div>
-                <div data-src="img/slider/2.jpg"></div>
-                <div data-src="img/slider/3.jpg"></div>                                        
-            </div><!-- #camera_wrap_1 -->
-            <div class="clear"></div>	
-        </div>        
-        <!--//slider-->
-                       
-=======
                 <div data-src={% static "img/slider/1.jpg" %}></div>
                 <div data-src={% static "img/slider/2.jpg" %}></div>
                 <div data-src={% static "img/slider/3.jpg" %}></div>
@@ -251,93 +140,52 @@
         </div>
         <!--//slider-->
 
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
         <!--planning-->
         <div class="wrap planning">
             <div class="container">
                 <div class="row">
                     <div class="span3">
                         <a href="#">
-<<<<<<< HEAD
-                        	<span class="img_icon icon1"></span>
-                            <span class="link_title">egestas dolor</span>
-                        	Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
-=======
                             <span class={% static "img_icon icon1" %}></span>
                             <span class="link_title">egestas dolor</span>
                             Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                         </a>
                     </div>
                     <div class="span3">
                         <a href="#">
-<<<<<<< HEAD
-                        	<span class="img_icon icon2"></span>
-                            <span class="link_title">lorem ipsum</span>
-                        	Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
-=======
                             <span class={% static "img_icon icon2" %}></span>
                             <span class="link_title">lorem ipsum</span>
                             Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                         </a>
                     </div>
                     <div class="span3">
                         <a href="#">
-<<<<<<< HEAD
-                        	<span class="img_icon icon3"></span>
-                            <span class="link_title">vestilum eget</span>
-                        	Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
-=======
                             <span class={% static "img_icon icon3" %}></span>
                             <span class="link_title">vestilum eget</span>
                             Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                         </a>
                     </div>
                     <div class="span3">
                         <a href="#">
-<<<<<<< HEAD
-                        	<span class="img_icon icon4"></span>
-                            <span class="link_title">nulla feugiat</span>
-                        	Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
-                        </a>
-                    </div>                           	
-=======
                             <span class={% static "img_icon icon4" %}></span>
                             <span class="link_title">nulla feugiat</span>
                             Nunc vel arcu arcu. Nulla mollis feugiat dui id tincidunt. Aenean ac lobortis elit.
                         </a>
                     </div>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                 </div>
             </div>
         </div>
         <!--//planning-->
-<<<<<<< HEAD
-        
-        <!--Welcome-->
-        <div class="wrap block">
-            <div class="container welcome_block">
-            	<div class="welcome_line welcome_t"></div>
-=======
-
         <!--Welcome-->
         <div class="wrap block">
             <div class="container welcome_block">
             <div class="welcome_line welcome_t"></div>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
             	Cras vulputate pretium massa gravida egestas consectetur?<span>Lorem ipsum dolor sit amet &amp; consectetur adipiscing elit!</span>
                 <div class="welcome_line welcome_b"></div>
             </div>
         </div>
-<<<<<<< HEAD
-        <!--//Welcome-->         
-        
-=======
         <!--//Welcome-->
 
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
         <!--featured works-->
         <div class="wrap block carousel_block">
             <div class="container">
@@ -347,64 +195,30 @@
                         <ul id="mycarousel" class="jcarousel-skin-tango">
                             <li>
                             	<div class="hover_img">
-<<<<<<< HEAD
-                                	<a href="img/featured_works/1.jpg" rel="prettyPhoto[portfolio1]"><img src="img/featured_works/1.jpg" alt="" /><span class="portfolio_zoom1"></span></a>                                    
-=======
-                                	<a href={% static "img/featured_works/1.jpg" %} rel="prettyPhoto[portfolio1]"><img src={% static "img/featured_works/1.jpg" %} alt="" /><span class="portfolio_zoom1"></span></a>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                 </div>
                             </li>
                             <li>
                             	<div class="hover_img">
-<<<<<<< HEAD
-                                	<a href="img/featured_works/2.jpg" rel="prettyPhoto[portfolio1]"><img src="img/featured_works/2.jpg" alt="" /><span class="portfolio_zoom1"></span></a>                                    
-=======
                                 	<a href={% static "img/featured_works/2.jpg" %} rel="prettyPhoto[portfolio1]"><img src={% static "img/featured_works/2.jpg" %} alt="" /><span class="portfolio_zoom1"></span></a>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                 </div>
                             </li>
                             <li>
                                 <div class="hover_img">
-<<<<<<< HEAD
-                                	<a href="img/featured_works/3.jpg" rel="prettyPhoto[portfolio1]"><img src="img/featured_works/3.jpg" alt="" /><span class="portfolio_zoom1"></span></a>                                    
-                                </div>
-                            </li> 
-                            <li>
-                                <div class="hover_img">
-                                	<a href="img/featured_works/4.jpg" rel="prettyPhoto[portfolio1]"><img src="img/featured_works/4.jpg" alt="" /><span class="portfolio_zoom1"></span></a>                                    
-=======
                                 	<a href={% static "img/featured_works/3.jpg" %} rel="prettyPhoto[portfolio1]"><img src={% static "img/featured_works/3.jpg" %} alt="" /><span class="portfolio_zoom1"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="hover_img">
                                 	<a href={% static "img/featured_works/4.jpg" %} rel="prettyPhoto[portfolio1]"><img src={% static "img/featured_works/4.jpg" %} alt="" /><span class="portfolio_zoom1"></span></a>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                 </div>
                             </li>
                             <li>
                             	<div class="hover_img">
-<<<<<<< HEAD
-                                	<a href="img/featured_works/1.jpg" rel="prettyPhoto[portfolio1]"><img src="img/featured_works/1.jpg" alt="" /><span class="portfolio_zoom1"></span></a>                                    
-=======
                                 	<a href={% static "img/featured_works/1.jpg" %} rel="prettyPhoto[portfolio1]"><img src={% static "img/featured_works/1.jpg" %} alt="" /><span class="portfolio_zoom1"></span></a>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                 </div>
                             </li>
                             <li>
                             	<div class="hover_img">
-<<<<<<< HEAD
-                                	<a href="img/featured_works/2.jpg" rel="prettyPhoto[portfolio1]"><img src="img/featured_works/2.jpg" alt="" /><span class="portfolio_zoom1"></span></a>                                    
-                                </div>
-                            </li>                                                       
-                        </ul>                         
-                    </div>                
-                </div>                
-            </div>
-        </div>        
-        <!--//featured works-->
-        
-=======
                                 	<a href={% static "img/featured_works/2.jpg" %} rel="prettyPhoto[portfolio1]">
                                         <img src={% static "img/featured_works/2.jpg" %} alt="" />
                                         <span class="portfolio_zoom1"></span></a>
@@ -416,25 +230,11 @@
             </div>
         <!--//featured works-->
 
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
         <!--Latest news-->
         <div class="wrap block">
         	<div class="container">
         		<div class="row news_block">
         			<div class="span6">
-<<<<<<< HEAD
-                    	<h2 class="title">egestas sed convallis metus!</h2>
-                        <p>Vestibulum tincidunt ultricies aliquam. Donec porta mi nec tortor sagittis rhoncus. Nunc ante arcu, ornaresit gravida rutrum ut, facilisis et lacus. Aliquam mauris arcu, interdum eu fermentum tincidunt.</p>
-                        <ul class="the-icons grey">
-                        	<li><i class="icon-time"></i> Curabitur eu placerat massa.</li>
-                            <li><i class="icon-star"></i> Integer adipiscing velit nec purus facilisis ut pharetra!</li>
-                            <li><i class="icon-camera"></i> Nunc mollis, nisl vel tincidunt vestibulum, lacus libero mollis urna, eu dapibus lacus nisi et nulla.</li>
-                            <li><i class="icon-qrcode"></i> Curabitur veltpat magna. Pellentesque pellentesque dapibus dictum. </li>
-                            <li><i class="icon-user"></i> Nulla ut erat ut massa molestie commodo.</li>
-                        </ul>
-                        <p>Duis vel ligula et libero iaculis facilisis in vel justo. Duis lacinia orci ut tellus interdum dignissim. Fusce eugei scelerisque enim. Phasellus nec libero lectus. Quisque posuere mi non nibh facilisis semper. Donec lorem suscipit est sed mauris eleifend congue. Class taciti sociosqu litora torquent <a href="#" class="arrow_link">per conubia.</a></p>
-                    </div> 
-=======
                     	            <h2 class="title">egestas sed convallis metus!</h2>
                                     <p>Vestibulum tincidunt ultricies aliquam. Donec porta mi nec tortor sagittis rhoncus. Nunc ante arcu, ornaresit gravida rutrum ut, facilisis et lacus. Aliquam mauris arcu, interdum eu fermentum tincidunt.</p>
                                 <ul class="the-icons grey">
@@ -447,7 +247,6 @@
                                 <p>Duis vel ligula et libero iaculis facilisis in vel justo. Duis lacinia orci ut tellus interdum dignissim. Fusce eugei scelerisque enim. Phasellus nec libero lectus. Quisque posuere mi non nibh facilisis semper. Donec lorem suscipit est sed mauris eleifend congue. Class taciti sociosqu litora torquent <a href="#" class="arrow_link">per conubia.</a>
                                 </p>
                     </div>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                     <div class="span6">
                     	<h2 class="title">Latest news</h2>
                         <ul id="newscarousel" class="jcarousel-skin-tango">
@@ -479,22 +278,12 @@
                                 <div class="news_info">Cursus sed, aliquet nec odio. Integer ornare tincidunt neque a tristique. Phasellus porttitor millis tortor etoq vestibulum. Quisque ont lacus toirtor uis accumsan nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ulvinarteses em sed. <a href="#">Read more...</a></div>
                                 <div class="clear"></div>
                             </li>
-<<<<<<< HEAD
-                         </ul> 
-                    </div>       		
-=======
                          </ul>
                     </div>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
             	</div>
         	</div>
         </div>
         <!--Latest news-->
-<<<<<<< HEAD
-        
-=======
-
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
         <!--latest posts-->
         <div class="wrap block carousel_block">
             <div class="container">
@@ -504,132 +293,64 @@
                         <ul id="mycarousel2" class="jcarousel-skin-tango">
                             <li>
                             	<div class="post_carousel">
-<<<<<<< HEAD
-                                	<img src="img/home_blog/1.jpg" alt="" />
-=======
                                 	<img src={% static "img/home_blog/1.jpg" %} alt="" />
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                 	<div class="title_t"><a href="#">ipsum dolor ac egestas mas</a></div>
                                     <div class="post_meta">
                                 		Posted by <a href="#">John Doe</a>  /  15 apr  / In <a href="#">Vacation</a>
                                     </div>
                                     Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read more...</a>
-<<<<<<< HEAD
-                                </div>	
-                            </li>
-                            <li>
-                            	<div class="post_carousel">
-                                	<img src="img/home_blog/2.jpg" alt="" />
-=======
                                 </div>
                             </li>
                             <li>
                             	<div class="post_carousel">
                                 	<img src={% static "img/home_blog/2.jpg" %} alt="" />
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                 	<div class="title_t"><a href="#">vestibulum egestas tortor</a></div>
                                     <div class="post_meta">
                                 		Posted by <a href="#">John Doe</a>  /  15 apr  / In <a href="#">Vacation</a>
                                     </div>
                                     Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read more...</a>
-<<<<<<< HEAD
-                                </div>	
-                            </li>
-                            <li>
-                            	<div class="post_carousel">
-                                	<img src="img/home_blog/3.jpg" alt="" />
-=======
+
                                 </div>
                             </li>
                             <li>
                             	<div class="post_carousel">
                                 	<img src={% static "img/home_blog/3.jpg" %} alt="" />
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                 	<div class="title_t"><a href="#">Quisque sodales dolor</a></div>
                                     <div class="post_meta">
                                 		Posted by <a href="#">John Doe</a>  /  15 apr  / In <a href="#">Vacation</a>
                                     </div>
                                     Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read more...</a>
-<<<<<<< HEAD
-                                </div>	
-                            </li>
-                            <li>
-                            	<div class="post_carousel">
-                                	<img src="img/home_blog/4.jpg" alt="" />
-=======
                                 </div>
                             </li>
                             <li>
                             	<div class="post_carousel">
                                 	<img src={% static "img/home_blog/4.jpg" %} alt="" />
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                 	<div class="title_t"><a href="#">ipsum dolor ac egestas mas</a></div>
                                     <div class="post_meta">
                                 		Posted by <a href="#">John Doe</a>  /  15 apr  / In <a href="#">Vacation</a>
                                     </div>
                                     Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read more...</a>
-<<<<<<< HEAD
-                                </div>	
-                            </li> 
-                            <li>
-                            	<div class="post_carousel">
-                                	<img src="img/home_blog/1.jpg" alt="" />
-=======
                                 </div>
                             </li>
                             <li>
                             	<div class="post_carousel">
                                 	<img src={% static "img/home_blog/1.jpg" %} alt="" />
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                 	<div class="title_t"><a href="#">Tristique cursus tincidunt</a></div>
                                     <div class="post_meta">
                                 		Posted by <a href="#">John Doe</a>  /  15 apr  / In <a href="#">Vacation</a>
                                     </div>
                                     Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read more...</a>
-<<<<<<< HEAD
-                                </div>	
-                            </li>
-                            <li>
-                            	<div class="post_carousel">
-                                	<img src="img/home_blog/2.jpg" alt="" />
-=======
                                 </div>
                             </li>
                             <li>
                             	<div class="post_carousel">
                                 	<img src={% static "img/home_blog/2.jpg" %} alt="" />
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                 	<div class="title_t"><a href="#">ipsum dolor ac egestas mas</a></div>
                                     <div class="post_meta">
                                 		Posted by <a href="#">John Doe</a>  /  15 apr  / In <a href="#">Vacation</a>
                                     </div>
                                     Ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. Integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">Read more...</a>
-<<<<<<< HEAD
-                                </div>	
-                            </li>                                                                                   
-                        </ul>                        
-                    </div>                
-                </div>                
-            </div>
-        </div>        
-        <!--//latest posts--> 
-    </div>
-    <!--//page_container-->
-    
-    <!--footer-->
-    <div id="footer">
-    	<div class="wrap">
-    		<div class="container">
-            	<div class="row">
-                	<div class="span3">
-                    	<h2 class="title">Latest tweets</h2>
-                        <div class="tweet_block"></div>                       
-                    </div>
-                    <div class="span3">
-                    	<h2 class="title">Get in touch!</h2>
-                        <form action="#" method="post">
-                        	<input class="span3" type="text" name="name" id="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
-=======
+
                                 </div>
                             </li>
                         </ul>
@@ -656,7 +377,6 @@
                     	<h2 class="title">Get in touch!</h2>
                         <form action="#" method="post">
                             <input class="span3" type="text" name="name" id="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                             <input class="span3" type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
                             <textarea name="message" id="message" class="span3" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';" >Message</textarea>
                             <div class="clear"></div>
@@ -664,19 +384,11 @@
                             <input type="submit" class="btn send_btn" value="Send!" />
                             <div class="clear"></div>
                         </form>
-<<<<<<< HEAD
-                    </div> 
-                    <div class="span3">
-                    	<h2 class="title">Testimonials</h2>
-                        <ul>
-                        	<li>
-=======
                     </div>
                     <div class="span3">
                     	<h2 class="title">Testimonials</h2>
                         <ul>
                             <li>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                             	<span class="testimonials_arrow"></span>Orci nisi, luctus vitae imperdiet a, iquam vel urna. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullamcorper pulvinar, massa libero magna.
                             	<div class="clear"></div>
                                 <div class="author">Anna Smith, Company inc.</div>
@@ -686,46 +398,28 @@
                             	<div class="clear"></div>
                                 <div class="author">John Doe, Company inc.</div>
                             </li>
-<<<<<<< HEAD
-                        </ul>                     
-                    </div>
-                    <div class="span3">
-=======
                         </ul>
                     </div>
                     <div class="span3">
                         <!--TODO: Replace this with a flickr setting.-->
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                     	<h2 class="title">flickr photostream</h2>
                         <div class="flickrs">
                             <div class="FlickrImages">
                                 <ul></ul>
                                 <div class="clear"></div>
                             </div>
-<<<<<<< HEAD
-                        </div> 
-                    </div>         	
-            	</div>
-        	</div>            
-        </div>
-        
-=======
+
                         </div>
                     </div>
             	</div>
         	</div>
         </div>
 
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
         <div class="footer_bottom">
             <div class="wrap">
             	<div class="container">
                 	<div class="row">
                 		<div class="span5">
-<<<<<<< HEAD
-                        	<div class="foot_logo"><a href="index.html"><img src="img/foot_logo.png" alt="" /></a></div>    
-                        	<div class="copyright">&copy; 2020 Jessica White. Professional Fashion Photography. All Rights Reserved.</div>                        
-=======
                         	<div class="foot_logo">
                                     <title>
                                         {% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}
@@ -737,19 +431,10 @@
                                 </div>
                         	<div class="copyright">&copy; 2015 John Smith.
                                     Fancy Designer Clothing, ltd. All Rights Reserved.</div>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                         </div>
                         <div class="span7">
                         	<div class="foot_right_block">
                             	<div class="fright">
-<<<<<<< HEAD
-                                	<form action="#" method="post">
-                                        <input class="inp_search" name="name" type="text" value="Search the Site" onfocus="if (this.value == 'Search the Site') this.value = '';" onblur="if (this.value == '') this.value = 'Search the Site';" />                                        
-                                    </form>
-                                </div>
-                                <div class="follow_us">
-                                	<ul>
-=======
                                     <form action="{% url 'search' %}" method="get">
                                         <input class="inp_search" name="q" type="text" value="Search the Site"
                                         onfocus="if (this.value == 'Search the Site') this.value = '';"
@@ -760,22 +445,10 @@
                                 <!--<div class="span8"% page_menu "pages/menus/dropdown.html" %}-->
                                 <!--TODO: Replace these with a page_menu, as indicated above.-->
                                     <ul>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                         <li><a rel="tooltip" href="#" title="Facebook" class="facebook">Facebook</a></li>
                                         <li><a rel="tooltip" href="#" title="Twitter" class="twitter">Twitter</a></li>
                                         <li><a rel="tooltip" href="#" title="Tumbrl" class="tumbrl">Tumbrl</a></li>
                                         <li><a rel="tooltip" href="#" title="Vimeo" class="vimeo">Vimeo</a></li>
-<<<<<<< HEAD
-                                        <li><a rel="tooltip" href="#" title="Delicious" class="delicious">Delicious</a></li>
-                                    </ul>
-                                </div>
-                                <div class="clear"></div>
-                            
-                            	<div class="clear"></div>
-                            	<div class="foot_menu">
-                            		<ul>
-                                        <li><a href="index.html" class="current">Home</a></li>
-=======
                                         <li><a rel="tooltip" href="#" title="Delicious" class="delicious">Delicious</a>
                                         </li>
                                     </ul>
@@ -786,7 +459,6 @@
                                 <!--TODO: Replace these with a page_menu, as indicated above.-->
                             	    <ul>
                                         <li><a href=/ class="current">Home</a></li>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                                         <li><a href="about.html">About</a></li>
                                         <li><a href="scaffolding.html">features</a></li>
                                         <li><a href="portfolio_2columns.html">Portfolio</a></li>
@@ -794,54 +466,17 @@
                                         <li><a href="contacts.html">Contacts</a></li>
                                     </ul>
                             	</div>
-<<<<<<< HEAD
-                            </div>                            
-                        </div>
-                    </div>	
-=======
                             </div>
                         </div>
                     </div>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
                 </div>
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-    <!--//footer-->    
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
-    <script type="text/javascript" src="js/camera.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/superfish.js"></script>
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-    <script type="text/javascript" src="js/jquery.tweet.js"></script>
-    <script type="text/javascript" src="js/myscript.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function(){	
-			//Slider
-			$('#camera_wrap_1').camera();
-			
-			//Featured works & latest posts
-			$('#mycarousel, #mycarousel2, #newscarousel').jcarousel();													
-		});		
-	</script>
-
-
-{% include "includes/footer_scripts.html" %}
-
-</body>
-</html>
-=======
 <!--end footer-->
 
     {% include "includes/footer_scripts.html" %}
 	<!--</script>-->
 </body>
 </html>
-
-
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
