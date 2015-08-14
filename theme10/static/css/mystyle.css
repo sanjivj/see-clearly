@@ -1,0 +1,14 @@
+.dropdown-menu li{
+    background-color: yellow;
+}
+
+.foot_menu li{
+    display: block;
+    text-align: left;
+}
+
+.smaller{
+    background-color: violet;
+    font-weight: 500;
+    color: orange;
+}
