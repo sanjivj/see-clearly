@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 REM CALL npm install -g istanbul
 REM CALL easy_install --upgrade pip
 
@@ -38,3 +39,12 @@ REM CALL pip install django-livereload
 REM npm install -g gulp-mocha
 
 REM git clone http://github.com/ariya/coverage-mocha-istanbul-karma.git
+=======
+# This phial contains the instructions for installing gulp and some useful gulp
+# pacakges.
+
+
+npm install --save-dev gulp gulp-mocha gulp-sass gulp-istanbul gulp-jshint
+gulp-concat gulp-uglify gulp-autoprefixer gulp-plumber gulp-rename
+gulp-cache gulp-watch 
+>>>>>>> 6721f9056eaa44229da422c816ef5cffefdd8d97
