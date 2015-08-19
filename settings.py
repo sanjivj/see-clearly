@@ -2,7 +2,7 @@
 from __future__ import absolute_import, unicode_literals
 import os
 from django.utils.translation import ugettext_lazy as _
-
+#from mezzanine.conf import TEMPLATE_ACCESSIBLE_SETTINGS
 
 ######################
 # MEZZANINE SETTINGS #
@@ -342,3 +342,8 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
+SECRET_KEY = ('torteKitten1')
+
+#TEMPLATE_ACCESSIBLE_SETTINGS += ('SOCIAL_LINK_FACEBOOK', 'SOCIAL_LINK_VIMEO',
+        #'SOCIAL_LINK_TUMBRL',
+        #'SOCIAL_LINK_TWITTER', 'SOCIAL_LINK_DELICIOUS')

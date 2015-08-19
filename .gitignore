@@ -25,3 +25,10 @@ tem*/*
 tez*/*
 t*1/*
 theme5/migrations/__init__.pyc
+theme10/migrations/__init__.pyc
+theme10/migrations/*.pyc
+theme10/migrations/*
+node_modules/
+npm*
+*.json
+

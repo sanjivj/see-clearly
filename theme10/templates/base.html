@@ -27,6 +27,7 @@
     <link href={% static "css/theme.css" %} rel="stylesheet">
     <link rel="stylesheet" type="text.css" href={% static "css/skins/tango/skin.css" />
     <link href={% static "css/bootstrap-responsive.css" %} rel="stylesheet">
+    <link href={% static "css/mystyle.css" %} rel="stylesheet">
     {% block extra_css %}{% endblock %}
 {% endcompress %}
 
@@ -60,7 +61,6 @@
 <!--[if lt IE 9]>
     <script src="{% static "js/html5shiv.js" %}"></script>
     <script src="{% static "js/respond.min.js" %}"></script>
->>>>>>> c91b3d67d3cc69279190fa1a7a5a7ad8c8cb3aca
 <![endif]-->
 
 {% block extra_head %}{% endblock %}
@@ -75,56 +75,69 @@
         <div class="row">
         <div class="span4">
         <div class="logo">
-            <a href=/>{{ settings.SITE_TAGLINE }}</a>
-        </div
+            <a href="/">{{ settings.SITE_TAGLINE }}</a>
         </div>
-        <div class="span8">
+        </div>
+       <div class="span8">
         <!--{% page_menu "pages/menus/dropdown.html" %}-->
-        <!--TODO: Replace these with a page_menu, as indicated above.-->
             <ul>
-               <li><a href="#" class="facebook">Facebook</a></li>
-               <li><a href="#" class="vimeo">Vimeo</a></li>
-               <li><a href="#" class="tumbrl">Tumbrl</a></li>
-               <li><a href="#" class="twitter">Twitter</a></li>
-               <li><a href="#" class="delicious">Delicious</a></li>
+               {% if settings.SOCIAL_LINK_FACEBOOK %}<li>
+                    <a target="_blank" href="settings.SOCIAL_LINK_FACEBOOK"
+                        class="facebook">Facebook</a></li>{% endif %}
+               {% if settings.SOCIAL_LINK_VIMEO %}<li>
+                    <a target="_blank" href="settings.SOCIAL_LINK_VIMEO"
+                        class="vimeo">Vimeo</a></li>{% endif %}
+               {% if settings.SOCIAL_LINK_TUMBRL %}<li>
+                    <a target="_blank" href="settings.SOCIAL_LINK_TUMBRL"
+                        class="tumbrl">Tumbrl</a></li>{% endif %}
+               {% if settings.SOCIAL_LINK_TWITTER %}<li>
+                    <a target="_blank" href="settings.SOCIAL_LINK_TWITTER"
+                        class="twitter">Twitter</a></li>{% endif %}
+               {% if settings.SOCIAL_LINK_DELICIOUS %}<li>
+                    <a target="_blank" href="settings.SOCIAL_LINK_DELICIOUS"
+                        class="delicious">Delicious</a></li>{% endif %}
            </ul>
         </div>
-       <div class="clear"></div>
-            <nav id="main_menu">
-            <div class="menu_wrap">
-                <ul class="nav sf-menu">
-                    <li class="current"><a href=/>Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="sub-menu"><a href="javascript:{}">Features</a>
-                <ul>
-                <li><a href="scaffolding.html"><span>-</span>Scaffolding</a></li>
-                                              <li><a href="typography.html"><span>-</span>Typography</a></li>
-                                              <li><a href="shortcodes.html"><span>-</span>Shortcodes</a></li>
-                                              <li><a href="tables.html"><span>-</span>Tables</a></li>
-                                          </ul>
-                                      <li class="sub-menu"><a href="javascript:{}">Portfolio</a>
-                                           <ul>
-                                              <li><a href="portfolio_2columns.html"><span>-</span>2 Columns</a></li>
-                                              <li><a href="portfolio_3columns.html"><span>-</span>3 Columns</a></li>
 
-                                              <li><a href="portfolio_4columns.html"><span>-</span>4 Columns</a></li>
-                                          </ul>
-                                      </li>
-                                      <li class="sub-menu"><a href="javascript:{}">Blog</a>
-                                           <ul>
-                                              <li><a href="blog.html"><span>-</span>Blog with right sidebar</a></li>
-                                              <li><a href="blog_post.html"><span>-</span>Blog post</a></li>
-                                          </ul>
-                                      </li>
-                                      <li><a href="contacts.html">Contacts</a></li>
-                                    </ul>
-                                </div>
-                             </nav>
-                        </div>
+        <!--[>TODO: Replace these with a page_menu, as indicated above.<]-->
+        <div class="clear"></div>
+            <nav id="main_menu">
+            {% page_menu "pages/menus/dropdown.html" %}
+                <!--<div class="menu_wrap">-->
+                    <!--<ul class="nav sf-menu">-->
+                        <!--<li class="current"><a href=/>Home</a></li>-->
+                        <!--<li><a href="about.html">About</a></li>-->
+                        <!--<li class="sub-menu"><a href="javascript:{}">Features</a>-->
+                        <!--<ul>-->
+                            <!--<li><a href="scaffolding.html"><span>-</span>Scaffolding</a></li>-->
+                            <!--<li><a href="typography.html"><span>-</span>Typography</a></li>-->
+                            <!--<li><a href="shortcodes.html"><span>-</span>Shortcodes</a></li>-->
+                            <!--<li><a href="tables.html"><span>-</span>Tables</a></li>-->
+                        <!--</ul>-->
+                        <!--<li class="sub-menu"><a href="javascript:{}">Portfolio</a>-->
+                            <!--<ul>-->
+                                <!--<li><a href="portfolio_2columns.html"><span>-</span>2 Columns</a></li>-->
+                                <!--<li><a href="portfolio_3columns.html"><span>-</span>3 Columns</a></li>-->
+                                <!--<li><a href="portfolio_4columns.html"><span>-</span>4 Columns</a></li>-->
+                            <!--</ul>-->
+                         <!--</li>-->
+                         <!--<li class="sub-menu"><a href="javascript:{}">Blog</a>-->
+                            <!--<ul>-->
+                                 <!--<li><a href="blog.html"><span>-</span>Blog with right sidebar</a></li>-->
+                                 <!--<li><a href="blog_post.html"><span>-</span>Blog post</a></li>-->
+                            <!--</ul>-->
+                         <!--</li>-->
+                         <!--<li><a href="contacts.html">Contacts</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            </nav>
+          </div>
+          
                     </div>
                 </div>
              </div>
         </div>
+
     </header>
 
     <!--page_container-->
@@ -179,9 +192,9 @@
         <!--Welcome-->
         <div class="wrap block">
             <div class="container welcome_block">
-            <div class="welcome_line welcome_t"></div>
-            	Cras vulputate pretium massa gravida egestas consectetur?<span>Lorem ipsum dolor sit amet &amp; consectetur adipiscing elit!</span>
-                <div class="welcome_line welcome_b"></div>
+                    <div class="welcome_line welcome_t"></div>
+                    Cras vulputate pretium massa gravida egestas consectetur?<span>Lorem ipsum dolor sit amet &amp; consectetur adipiscing elit!</span>
+                    <div class="welcome_line welcome_b"></div>
             </div>
         </div>
         <!--//Welcome-->
@@ -457,14 +470,15 @@
                             	<div class="foot_menu">
                                 <!--<div class="span8"% page_menu "pages/menus/dropdown.html" %}-->
                                 <!--TODO: Replace these with a page_menu, as indicated above.-->
-                            	    <ul>
-                                        <li><a href=/ class="current">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="scaffolding.html">features</a></li>
-                                        <li><a href="portfolio_2columns.html">Portfolio</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="contacts.html">Contacts</a></li>
-                                    </ul>
+                                {% page_menu "pages/menus/footer.html" %}
+                                        <!--<ul>-->
+                                        <!--<li><a href=/ class="current">Home</a></li>-->
+                                        <!--<li><a href="about.html">About</a></li>-->
+                                        <!--<li><a href="scaffolding.html">features</a></li>-->
+                                        <!--<li><a href="portfolio_2columns.html">Portfolio</a></li>-->
+                                        <!--<li><a href="blog.html">Blog</a></li>-->
+                                        <!--<li><a href="contacts.html">Contacts</a></li>-->
+                                    <!--</ul>-->
                             	</div>
                             </div>
                         </div>
