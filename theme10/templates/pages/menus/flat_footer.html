@@ -1,7 +1,7 @@
 {% load i18n pages_tags %}
 
 {% spaceless %}
-    <!--{% if page_branch_in_menu %}-->
+    {% if page_branch_in_menu %}
 
         {% for page in page_branch %}
             {% if page.is_primary %}
@@ -41,5 +41,5 @@
 
             {% endfor %}
 
-   <!--{% endif %}-->
+   {% endif %}
 {% endspaceless %}
