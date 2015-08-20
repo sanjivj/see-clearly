@@ -1,7 +1,255 @@
-{% extends page.html %}
+{% extends "pages/page.html" %}
+
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+{% load static from staticfiles %}
 
 <style type="text/css" media="all">
 body{
     background-color: yellow;
 }
 </style>
+
+
+{% block all_content %}
+    <!--page_container-->
+    <div class="page_container">
+
+        {% if page.homepage.slides.all %}A
+        <!--slider-->
+        <div id="main_slider">
+            <div class="camera_wrap" id="camera_wrap_1">
+                {% for slide in  page.homepage.slides.all %}
+                    <div data-src={{ MEDIA_URL }} {% thumbnail slide.image 1920 690 %}></div>
+                {% endfor %}
+            </div><!-- #camera_wrap_1 -->
+            <div class="clear"></div>
+        </div>
+        <!--//slider-->
+        {% endif %}
+
+        {% if page.homepage.slides.all %}A
+        <!--planning-->
+        <div class="wrap planning">
+            <div class="container">
+                <div class="row">
+                    <div class="span3">
+                        <a href="#">
+                            <span class={% static "img_icon icon1" %}></span>
+                            <span class="link_title">egestas dolor</span>
+                            nunc vel arcu arcu. nulla mollis feugiat dui id tincidunt. aenean ac lobortis elit.
+                        </a>
+                    </div>
+                    <div class="span3">
+                        <a href="#">
+                            <span class={% static "img_icon icon2" %}></span>
+                            <span class="link_title">lorem ipsum</span>
+                            nunc vel arcu arcu. nulla mollis feugiat dui id tincidunt. aenean ac lobortis elit.
+                        </a>
+                    </div>
+                    <div class="span3">
+                        <a href="#">
+                            <span class={% static "img_icon icon3" %}></span>
+                            <span class="link_title">vestilum eget</span>
+                            nunc vel arcu arcu. nulla mollis feugiat dui id tincidunt. aenean ac lobortis elit.
+                        </a>
+                    </div>
+                    <div class="span3">
+                        <a href="#">
+                            <span class={% static "img_icon icon4" %}></span>
+                            <span class="link_title">nulla feugiat</span>
+                            nunc vel arcu arcu. nulla mollis feugiat dui id tincidunt. aenean ac lobortis elit.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//planning-->
+        {% endif %}
+
+        <!--welcome-->
+        <div class="wrap block">
+            <div class="container welcome_block">
+                    <div class="welcome_line welcome_t"></div>
+                    cras vulputate pretium massa gravida egestas consectetur?<span>lorem ipsum dolor sit amet &amp; consectetur adipiscing elit!</span>
+                    <div class="welcome_line welcome_b"></div>
+            </div>
+        </div>
+        <!--//welcome-->
+
+        <!--featured works-->
+        <div class="wrap block carousel_block">
+            <div class="container">
+            	<h2 class="upper">featured works</h2>
+            	<div class="row">
+                    <div class="span12">
+                        <ul id="mycarousel" class="jcarousel-skin-tango">
+                            <li>
+                            	<div class="hover_img">
+                                </div>
+                            </li>
+                            <li>
+                            	<div class="hover_img">
+                                	<a href={% static "img/featured_works/2.jpg" %} rel="prettyphoto[portfolio1]"><img src={% static "img/featured_works/2.jpg" %} alt="" /><span class="portfolio_zoom1"></span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hover_img">
+                                	<a href={% static "img/featured_works/3.jpg" %} rel="prettyphoto[portfolio1]"><img src={% static "img/featured_works/3.jpg" %} alt="" /><span class="portfolio_zoom1"></span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hover_img">
+                                	<a href={% static "img/featured_works/4.jpg" %} rel="prettyphoto[portfolio1]"><img src={% static "img/featured_works/4.jpg" %} alt="" /><span class="portfolio_zoom1"></span></a>
+                                </div>
+                            </li>
+                            <li>
+                            	<div class="hover_img">
+                                	<a href={% static "img/featured_works/1.jpg" %} rel="prettyphoto[portfolio1]"><img src={% static "img/featured_works/1.jpg" %} alt="" /><span class="portfolio_zoom1"></span></a>
+                                </div>
+                            </li>
+                            <li>
+                            	<div class="hover_img">
+                                	<a href={% static "img/featured_works/2.jpg" %} rel="prettyphoto[portfolio1]">
+                                        <img src={% static "img/featured_works/2.jpg" %} alt="" />
+                                        <span class="portfolio_zoom1"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <!--//featured works-->
+
+        <!--latest news-->
+        <div class="wrap block">
+        	<div class="container">
+        		<div class="row news_block">
+        			<div class="span6">
+                    	            <h2 class="title">egestas sed convallis metus!</h2>
+                                    <p>vestibulum tincidunt ultricies aliquam. donec porta mi nec tortor sagittis rhoncus. nunc ante arcu, ornaresit gravida rutrum ut, facilisis et lacus. aliquam mauris arcu, interdum eu fermentum tincidunt.</p>
+                                <ul class="the-icons grey">
+                                    <li><i class="icon-time"></i> curabitur eu placerat massa.</li>
+                                    <li><i class="icon-star"></i> integer adipiscing velit nec purus facilisis ut pharetra!</li>
+                                    <li><i class="icon-camera"></i> nunc mollis, nisl vel tincidunt vestibulum, lacus libero mollis urna, eu dapibus lacus nisi et nulla.</li>
+                                    <li><i class="icon-qrcode"></i> curabitur veltpat magna. pellentesque pellentesque dapibus dictum. </li>
+                                    <li><i class="icon-user"></i> nulla ut erat ut massa molestie commodo.</li>
+                                </ul>
+                                <p>duis vel ligula et libero iaculis facilisis in vel justo. duis lacinia orci ut tellus interdum dignissim. fusce eugei scelerisque enim. phasellus nec libero lectus. quisque posuere mi non nibh facilisis semper. donec lorem suscipit est sed mauris eleifend congue. class taciti sociosqu litora torquent <a href="#" class="arrow_link">per conubia.</a>
+                                </p>
+                    </div>
+                    <div class="span6">
+                    	<h2 class="title">latest news</h2>
+                        <ul id="newscarousel" class="jcarousel-skin-tango">
+                            <li>
+                            	<div class="news_date">15 apr<span>2019</span></div>
+                                <div class="news_t"><a href="#">sed massa dui, porta corper ac varius!</a></div>
+                                <div class="news">posted by <a href="#">anna smith</a>  /  in <a href="#">city</a><br/>tags: <a href="#">eget</a>, <a href="#">mauris</a></div>
+                                <div class="news_info">tristique tincidunt cursus sed, ornare ncidunt eque a tristique. phasellus porttitor mollis tortor etoq vestibulum. quisque non lacus tortor, quis cumsan nibh. lorem ipsum dolor sit amet, consectetur icing elit. nullam pulvinarteses lorem sed dui euismod eget. <a href="#">read more...</a></div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                            	<div class="news_date">05 apr<span>2019</span></div>
+                                <div class="news_t"><a href="#">eget &amp; massa viviamu marius mas</a></div>
+                                <div class="news">posted by <a href="#">anna smith</a>  /  in <a href="#">city</a><br/>tags: <a href="#">eget</a>, <a href="#">mauris</a></div>
+                                <div class="news_info">cursus sed, aliquet nec odio. integer ornare tincidunt neque a tristique. phasellus porttitor millis tortor etoq vestibulum. quisque ont lacus toirtor uis accumsan nibh. lorem ipsum dolor sit amet, consectetur adipiscing elit. nullam ulvinarteses em sed. <a href="#">read more...</a></div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                            	<div class="news_date">15 apr<span>2019</span></div>
+                                <div class="news_t"><a href="#">sed massa dui, porta corper ac varius!</a></div>
+                                <div class="news">posted by <a href="#">anna smith</a>  /  in <a href="#">city</a><br/>tags: <a href="#">eget</a>, <a href="#">mauris</a></div>
+                                <div class="news_info">tristique tincidunt cursus sed, ornare ncidunt eque a tristique. phasellus porttitor mollis tortor etoq vestibulum. quisque non lacus tortor, quis cumsan nibh. lorem ipsum dolor sit amet, consectetur icing elit. nullam pulvinarteses lorem sed dui euismod eget. <a href="#">read more...</a></div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                            	<div class="news_date">05 apr<span>2019</span></div>
+                                <div class="news_t"><a href="#">eget &amp; massa viviamu marius mas</a></div>
+                                <div class="news">posted by <a href="#">anna smith</a>  /  in <a href="#">city</a><br/>tags: <a href="#">eget</a>, <a href="#">mauris</a></div>
+                                <div class="news_info">cursus sed, aliquet nec odio. integer ornare tincidunt neque a tristique. phasellus porttitor millis tortor etoq vestibulum. quisque ont lacus toirtor uis accumsan nibh. lorem ipsum dolor sit amet, consectetur adipiscing elit. nullam ulvinarteses em sed. <a href="#">read more...</a></div>
+                                <div class="clear"></div>
+                            </li>
+                         </ul>
+                    </div>
+            	</div>
+        	</div>
+        </div>
+        <!--latest news-->
+
+        <!--latest posts-->
+        <div class="wrap block carousel_block">
+            <div class="container">
+            	<h2 class="upper">latest posts</h2>
+            	<div class="row">
+                    <div class="span12">
+                        <ul id="mycarousel2" class="jcarousel-skin-tango">
+                            <li>
+                            	<div class="post_carousel">
+                                	<img src={% static "img/home_blog/1.jpg" %} alt="" />
+                                	<div class="title_t"><a href="#">ipsum dolor ac egestas mas</a></div>
+                                    <div class="post_meta">
+                                		posted by <a href="#">john doe</a>  /  15 apr  / in <a href="#">vacation</a>
+                                    </div>
+                                    ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">read more...</a>
+                                </div>
+                            </li>
+                            <li>
+                            	<div class="post_carousel">
+                                	<img src={% static "img/home_blog/2.jpg" %} alt="" />
+                                	<div class="title_t"><a href="#">vestibulum egestas tortor</a></div>
+                                    <div class="post_meta">
+                                		posted by <a href="#">john doe</a>  /  15 apr  / in <a href="#">vacation</a>
+                                    </div>
+                                    ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">read more...</a>
+
+                                </div>
+                            </li>
+                            <li>
+                            	<div class="post_carousel">
+                                	<img src={% static "img/home_blog/3.jpg" %} alt="" />
+                                	<div class="title_t"><a href="#">quisque sodales dolor</a></div>
+                                    <div class="post_meta">
+                                		posted by <a href="#">john doe</a>  /  15 apr  / in <a href="#">vacation</a>
+                                    </div>
+                                    ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">read more...</a>
+                                </div>
+                            </li>
+                            <li>
+                            	<div class="post_carousel">
+                                	<img src={% static "img/home_blog/4.jpg" %} alt="" />
+                                	<div class="title_t"><a href="#">ipsum dolor ac egestas mas</a></div>
+                                    <div class="post_meta">
+                                		posted by <a href="#">john doe</a>  /  15 apr  / in <a href="#">vacation</a>
+                                    </div>
+                                    ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">read more...</a>
+                                </div>
+                            </li>
+                            <li>
+                            	<div class="post_carousel">
+                                	<img src={% static "img/home_blog/1.jpg" %} alt="" />
+                                	<div class="title_t"><a href="#">tristique cursus tincidunt</a></div>
+                                    <div class="post_meta">
+                                		posted by <a href="#">john doe</a>  /  15 apr  / in <a href="#">vacation</a>
+                                    </div>
+                                    ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">read more...</a>
+                                </div>
+                            </li>
+                            <li>
+                            	<div class="post_carousel">
+                                	<img src={% static "img/home_blog/2.jpg" %} alt="" />
+                                	<div class="title_t"><a href="#">ipsum dolor ac egestas mas</a></div>
+                                    <div class="post_meta">
+                                		posted by <a href="#">john doe</a>  /  15 apr  / in <a href="#">vacation</a>
+                                    </div>
+                                    ut nisl turpis, tristique tincidunt cursus sed, aliquet nec odio. integer ornare tincidunt neque a ristiquet phasellus mollis tortor. <a href="#" class="arrow_link">read more...</a>
+
+                                 </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//latest posts-->
+    </div>
+    <!--//page_container-->
+{% endblock all_content %}
